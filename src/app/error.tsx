@@ -5,7 +5,7 @@ import { Button } from "@/components/ui/button";
 import { AlertCircle } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
-export default function DashboardError({
+export default function GlobalError({
     error,
     reset,
 }: {

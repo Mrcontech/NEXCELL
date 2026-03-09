@@ -16,7 +16,7 @@ First, ensure you have Node.js installed. Then follow these steps:
    npm run dev
    ```
 
-3. Open your browser and navigate to: [http://localhost:3000/dashboard](http://localhost:3000/dashboard)
+3. Open your browser and navigate to: [http://localhost:3000/](http://localhost:3000/)
 
 ## 2. Assumptions & Engineering Decisions
 
@@ -24,6 +24,7 @@ First, ensure you have Node.js installed. Then follow these steps:
 - **Client-Side vs Server-Side Data**: The initial payload is fetched via a native `fetch` call in a custom API route (`app/api/activities/route.ts`), which is ideal for a limited dataset mock. It includes an artificial `800ms` delay to showcase high-fidelity skeletons and a smooth React Suspense transition.
 - **Premium UI Enhancements**: `framer-motion` is utilized for micro-layout animations to elevate the user feel. We integrated `recharts` for a dynamic visual distribution (Donut chart) of the statuses, and customized error catching with a React Error Boundary.
 - **Quality Assurance**: Unit tests are built with `vitest` for reliable utility functions formatting timestamps and classmerging correctly, proving a robust deployment infrastructure.
+- **Routing structure**: The primary dashboard is now the home route (`app/page.tsx`) to simplify the user journey.
 
 ## 3. Architecture Overview
 
